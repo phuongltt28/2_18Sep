@@ -1,0 +1,17 @@
+﻿
+@{
+    Layout = null;
+    ViewData["Title"] = "Upload File";
+}
+
+<h1>Demo upload</h1>
+<h3>Single File</h3>
+<form asp-action="ProcessSingleFile" enctype="multipart/form-data">
+    <input type="file" name="MyFile" />
+    <button>Upload</button>
+</form>
+<h3>Multiple File</h3>
+<form asp-action="ProcessMultipleFile" enctype="multipart/form-data">
+    <input type="file" name="MyFiles" multiple />
+    <button>Upload</button>
+</form>

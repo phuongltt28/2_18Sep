@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Calculate";
+}
+
+<h1>Calculate</h1>
+<form asp-action="Calculate" asp-controller="Demo" method="post">
+    <input name="a" placeholder="Toán hạng a" />
+    <select name="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value=":">:</option>
+    </select>
+    <input name="b" placeholder="Toán hạng b" />
+    <input type="submit"value="=" />
+    <input placeholder="Kết quả" value="@ViewBag.KetQua" />
+</form>
+
